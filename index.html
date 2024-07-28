@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1>Order Your Smoothie</h1>
+        <form id="smoothieForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="size">Size:</label>
+          <select id="size" name="size" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+
+          <label for="base">Base:</label>
+          <select id="base" name="base" required>
+            <option value="water">Water</option>
+            <option value="milk">Milk</option>
+            <option value="yogurt">Yogurt</option>
+          </select>
+
+          <label>Ingredients:</label>
+          <label
+            ><input type="checkbox" name="ingredients" value="strawberry" />
+            Strawberry</label
+          >
+          <label
+            ><input type="checkbox" name="ingredients" value="banana" />
+            Banana</label
+          >
+          <label
+            ><input type="checkbox" name="ingredients" value="mango" />
+            Mango</label
+          >
+          <label
+            ><input type="checkbox" name="ingredients" value="blueberry" />
+            Blueberry</label
+          >
+          <label
+            ><input type="checkbox" name="ingredients" value="watermelon" />
+            Watermelon</label
+          >
+
+          <button type="button" id="orderButton">Order</button>
+        </form>
+
+        <div id="orderSummary"></div>
+      </div>
+
+      <div class="glass-container">
+        <div id="smoothieGlass">
+          <div id="smoothieContent"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
